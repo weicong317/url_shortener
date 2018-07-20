@@ -1,0 +1,14 @@
+<table >
+  <tr>
+    <th>Long</th>
+    <th>Short</th> 
+  </tr>
+  <% @url.each do |row| %>
+    <tr>
+      <td style="border: 1px solid black"><%= link_to "#{row.long_url}", url_path(row.id) %></td>
+      <td style="border: 1px solid black"><%= row.short_url %></td>
+    </tr>
+  <% end %>
+</table>
+<hr>
+<%= button_to "Post", new_url_path, method: :get %>
