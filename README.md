@@ -1,3 +1,5 @@
+Sussessfully passed all the example
+
 Url Shortener Rspec Assessment
 ===============================
 
